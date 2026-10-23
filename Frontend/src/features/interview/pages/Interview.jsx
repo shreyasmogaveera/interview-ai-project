@@ -160,8 +160,8 @@ function Interview({ data = fallbackData }) {
               {activeTab === "technical"
                 ? "Technical Questions"
                 : activeTab === "behavioral"
-                ? "Behavioral Questions"
-                : "Road Map"}
+                  ? "Behavioral Questions"
+                  : "Road Map"}
             </h1>
             <span className="question-count">
               {activeTab === "roadmap"

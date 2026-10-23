@@ -33,7 +33,7 @@ const interviewReportSchema = z.object({
     })).describe("List of preparation steps for the interview")
 })
 
-async function generateInterviewReport({ resume, selfdescription, jobdescription }) {
+async function generateInterviewReport({ resume, selfDescription, jobDescription }) {
 
     const prompt = `You are generating a structured interview report.
 
@@ -91,8 +91,8 @@ Rules:
 
 Resume:
 Resume: ${resume}
-Self description: ${selfdescription}
-Job description: ${jobdescription}
+Self description: ${selfDescription}
+Job description: ${jobDescription}
 
 `;
    const response = await ai.models.generateContent({
